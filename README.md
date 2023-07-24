@@ -1,11 +1,11 @@
-About sc-3d
-===========
+About sc-3d-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sc-3d-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/GuignardLab/sc3D
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sc-3d-feedstock/blob/main/LICENSE.txt)
 
 Summary: Array alignment and 3D differential expression for 3D sc omics
 
