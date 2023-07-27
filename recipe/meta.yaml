@@ -1,5 +1,5 @@
 {% set name = "sc-3d" %}
-{% set version = "1.0.2" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sc-3D-{{ version }}.tar.gz
-  sha256: 62549f7843964ae88604f0c1aa6798ef8c84a9f122e616c1e9276fce5b4c436b
+  sha256: d83de0dde6ce34faa8606a27939a98363b2b440a505b75d0197f7f2ab5c39e0b
 
 build:
   noarch: python
