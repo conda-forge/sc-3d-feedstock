@@ -6,24 +6,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sc-3D-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sc-3D-{{ version }}.tar.gz
   sha256: d83de0dde6ce34faa8606a27939a98363b2b440a505b75d0197f7f2ab5c39e0b
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
     - anndata
     - matplotlib-base
     - numpy
     - pandas
-    - python >=3.8
+    - python >={{ python_min }}
     - scikit-learn
     - scipy
     - seaborn
@@ -36,6 +36,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/sc-3D/
